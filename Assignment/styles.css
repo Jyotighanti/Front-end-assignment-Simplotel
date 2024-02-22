@@ -1,0 +1,126 @@
+body {
+    font-family: Calibri (Body), sans-serif;
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    height: 100%;
+    background: linear-gradient(to bottom right, #ffff99 0%, #ff99cc 100%);
+    overflow-y: hidden;
+  
+}
+
+#navbar {
+    background-color: #ec6666;
+    color: #fff;
+    padding-top:2px;
+    font-family: Calibri (Body), sans-serif;
+    padding-bottom:4px ;
+    padding-right:150px;
+    padding-left: 250px;
+    font-size: 25px;
+    position: fixed;
+    width: 100%;
+    font-weight: bold;
+   
+}
+
+#menu-bar{
+    padding-left: 3%;
+}
+.container {
+    display: flex;
+  }
+  
+  .left-section, .right-section {
+    flex: 1;
+    padding: 0px;
+    margin: 0px;  
+  }
+
+.left-section{
+    width: 100%; 
+  height: 100%; 
+  margin: 10px 10px 0px 15px;
+  padding:10px 25px 0px  25px;
+  box-sizing: border-box; /* Include padding and border in the total width */
+}
+
+
+.right-section {
+    flex: 1;
+    height: 100%; /* Set the height to fill the entire viewport height */
+    margin:1 1 1 1;
+    padding: 10px 0px 0px 20px; /* Add padding for content */
+  }
+
+#burger{
+    width: 50%;
+    height: 300px;
+    background-size: cover; 
+
+}
+
+#navbar a {
+    text-decoration: none;
+    color:black ;
+    margin-left: 4%;
+    margin-right: 0%;
+}
+
+button{
+    padding: 15px 90px 15px 80px;
+    background-color:  #ec6666;
+    color: #ffffff;
+    font-size: 15px;
+    border-radius: none;
+    margin: 10px 10px 80px;
+    margin-left: 40px;
+    border:0;
+    opacity: 0.9;
+    text-align:center;
+    cursor: pointer;
+}
+
+h1{
+    padding: 50px 0 5px 20px;
+   font-size: 60px;
+
+}
+p{
+    padding: 50px 10px 25px 5px;
+    margin: 10px 20px 50px 30px;
+    font-size: 24px;
+    text-align: left;
+
+
+}
+
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    #navbar {
+        flex-direction: column;
+    }
+}
+
+/*For Tabs*/
+
+@media (min-width: 767px) and (max-width:991px) {
+    #navbar {
+        flex-direction: column;
+    }
+}
+
+/*For laptop*/
+@media (min-width: 992px) and (max-width:1023px) {
+    #navbar {
+        flex-direction: column;
+    }
+}
+
+/* For Desktop*/
+@media (min-width: 1024px) {
+    #navbar {
+        flex-direction: column;
+    }
+}
